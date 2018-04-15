@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+/*Clearfix*/
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.jumbotron {
+  min-height: 90vh;
+  background-image: url(http://i66.tinypic.com/33f6q1j.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.jumbotron nav {
+  padding: 0 50px;
+}
+
+.jumbotron nav .navbar-brand {
+  line-height: 40px;
+}
+
+@media only screen and (min-width: 1248px) {
+  .jumbotron nav .navbar-brand {
+    padding-left: 200px;
+  }
+}
+
+.jumbotron nav .navbar-brand img {
+  height: 25px;
+}
+
+.jumbotron nav .nav-item {
+  padding: 0 20px;
+}
+
+.jumbotron nav .navbar-nav a {
+  color: #fff;
+}
+
+.jumbotron nav .navbar-nav .dropdown-item {
+  color: #000;
+}
+
+.jumbotron nav input {
+  padding: 12px 30px;
+  border-radius: 22px;
+}
+
+.jumbotron nav .btn {
+  background-color: transparent;
+  position: absolute;
+  -webkit-transform: translate(11rem);
+          transform: translate(11rem);
+  color: #ccc;
+}
+/*# sourceMappingURL=style.prefixed.css.map */
