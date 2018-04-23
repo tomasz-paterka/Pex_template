@@ -67,12 +67,20 @@ $breakpoints: (
 		}
 		.nav-item {
 			padding: 0 20px;
+			text-align: center;
 		}
 		.navbar-nav a {
 			color: $main-font-color;
 		}
 		.navbar-nav .dropdown-item {
 			color: #000;
+		}
+		.navbar-toggler-icon {
+			background-color: transparent;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 		input {
 			padding: 12px 30px;
@@ -83,6 +91,41 @@ $breakpoints: (
 			position: absolute;
 			transform: translate(11rem);
 			color: #ccc;
+		}
+	}
+	.jumbotron-content {
+		color: $main-font-color;
+		transform: translateY(50%);
+		@include mq('tablet') {
+			transform: translateY(50%);
+		}
+		@include mq('desktop-wide') {
+			width: 40%;
+			text-align: right;
+			transform: translateY(100%);
+		}
+		h1 {
+			@include mq('tablet') {
+				font-size: 40px;
+				line-height: 70px;
+			}
+			
+			
+			@include mq('desktop-wide') {
+				font-size: 50px;
+				line-height: 70px;
+				margin-bottom: 40px;
+			}
+		}
+		.btn {
+			background-color: #8824cd;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 60px;
+			color: $main-font-color;
+			border-radius: 30px;
+			width: 280px;
+			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
 		}
 	}
 }
