@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
 * {
+  border: 1px solid black;
   box-sizing: border-box;
   font-family: "Open Sans";
 }
@@ -30,7 +31,7 @@
   line-height: 40px;
 }
 
-@media only screen and (min-width: 1248px) {
+@media only screen and (min-width: 992px) {
   .jumbotron nav .navbar-brand {
     padding-left: 200px;
   }
@@ -75,16 +76,18 @@
 
 .jumbotron .jumbotron-content {
   color: #fff;
-  transform: translateY(50%);
+  transform: translateY(100%);
 }
 
 @media only screen and (min-width: 768px) {
   .jumbotron .jumbotron-content {
     transform: translateY(50%);
+    width: 40%;
+    text-align: right;
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .jumbotron .jumbotron-content {
     width: 40%;
     text-align: right;
@@ -94,28 +97,41 @@
 
 @media only screen and (min-width: 768px) {
   .jumbotron .jumbotron-content h1 {
-    font-size: 40px;
-    line-height: 70px;
+    font-size: 35px;
+    line-height: 50px;
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 992px) {
   .jumbotron .jumbotron-content h1 {
-    font-size: 50px;
-    line-height: 70px;
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .jumbotron .jumbotron-content h1 {
+    font-size: 45px;
+    line-height: 60px;
     margin-bottom: 40px;
   }
 }
 
 .jumbotron .jumbotron-content .btn {
   background-color: #8824cd;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 60px;
-  color: #fff;
-  border-radius: 30px;
-  width: 280px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  color: #fff;
+  line-height: 20px;
+  border-radius: 30px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .jumbotron .jumbotron-content .btn {
+    width: 15vw;
+    font-size: 18px;
+    line-height: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

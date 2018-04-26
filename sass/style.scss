@@ -9,20 +9,16 @@ $main-font: 'Open Sans';
 $main-font-color: #fff;
 
 * {
-	//border: 1px solid black;
+	border: 1px solid black;
 	box-sizing: border-box;
 	font-family: $main-font;
 }
 //RWD
 $breakpoints: (
-	"phone":        400px,
-	"phone-wide":   480px,
-	"phablet":      560px,
-	"tablet-small": 640px,
+	"phone":        576px,
 	"tablet":       768px,
-	"tablet-wide":  1024px,
-	"desktop":      1248px,
-	"desktop-wide": 1440px
+	"desktop":      992px,
+	"large-desktops": 1200px
 );
 @mixin mq($width, $type: min) {
 	@if map_has_key($breakpoints, $width) {
@@ -95,37 +91,45 @@ $breakpoints: (
 	}
 	.jumbotron-content {
 		color: $main-font-color;
-		transform: translateY(50%);
+		transform: translateY(100%);
 		@include mq('tablet') {
 			transform: translateY(50%);
+			width: 40%;
+			text-align: right;
 		}
-		@include mq('desktop-wide') {
+		@include mq('large-desktops') {
 			width: 40%;
 			text-align: right;
 			transform: translateY(100%);
 		}
 		h1 {
 			@include mq('tablet') {
-				font-size: 40px;
-				line-height: 70px;
+				font-size: 35px;
+				line-height: 50px;
 			}
-			
-			
-			@include mq('desktop-wide') {
-				font-size: 50px;
-				line-height: 70px;
+			@include mq('desktop') {
+				font-size: 40px;
+				line-height: 60px;
+			}
+			@include mq('large-desktops') {
+				font-size: 45px;
+				line-height: 60px;
 				margin-bottom: 40px;
 			}
 		}
 		.btn {
 			background-color: #8824cd;
-			font-size: 18px;
-			font-weight: bold;
-			line-height: 60px;
-			color: $main-font-color;
-			border-radius: 30px;
-			width: 280px;
 			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+			font-weight: bold;
+			color: $main-font-color;
+			line-height: 20px;
+			border-radius: 30px;
+			@include mq('large-desktops') {
+				width: 15vw;
+				font-size: 18px;
+				line-height: 40px;
+			}
+			
 		}
 	}
 }
