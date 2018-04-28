@@ -9,7 +9,7 @@ $main-font: 'Open Sans';
 $main-font-color: #fff;
 
 * {
-	border: 1px solid black;
+	//border: 1px solid black;
 	box-sizing: border-box;
 	font-family: $main-font;
 }
@@ -50,6 +50,7 @@ $breakpoints: (
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+	margin: 0 auto;
 	nav {
 		padding: 0 50px;
 		.navbar-brand {
@@ -146,4 +147,40 @@ $breakpoints: (
 		}
 	}
 }
-
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50vh;
+	background-color: #2e3b4e;
+	color: $main-font-color;
+	line-height: 25px;
+	padding-top: 25px;
+	//position: relative;
+	h5 {
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 15px;
+		margin-bottom: 25px;
+	}
+	p {
+		font-size: 15px;
+	}
+}
+.shape {
+	display: none;
+	@include mq('large-desktops') {
+		background-color: transparent;
+		transform: translateY(-37px);
+		//transform: translateX(500px);
+		display: inline-block;
+		right: 48%;
+		position: absolute;
+		
+	}
+}
+.bang {
+	background-image: url(http://i68.tinypic.com/eju89l.png);
+	background-repeat: no-repeat;
+	min-height: 80vh;
+}

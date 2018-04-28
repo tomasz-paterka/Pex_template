@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
 * {
-  border: 1px solid black;
   box-sizing: border-box;
   font-family: "Open Sans";
 }
@@ -21,6 +20,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  margin: 0 auto;
 }
 
 .jumbotron nav {
@@ -147,6 +147,48 @@
     margin-right: 25px;
     padding-top: 10px;
   }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-color: #2e3b4e;
+  color: #fff;
+  line-height: 25px;
+  padding-top: 25px;
+}
+
+.about h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.about p {
+  font-size: 15px;
+}
+
+.shape {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .shape {
+    background-color: transparent;
+    transform: translateY(-37px);
+    display: inline-block;
+    right: 48%;
+    position: absolute;
+  }
+}
+
+.bang {
+  background-image: url(http://i68.tinypic.com/eju89l.png);
+  background-repeat: no-repeat;
+  min-height: 80vh;
 }
 
 /*# sourceMappingURL=style.css.map */
