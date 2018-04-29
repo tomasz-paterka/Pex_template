@@ -365,11 +365,86 @@
 }
 
 .photography {
-  background-image: url(/images/layer-27.png);
+  background: linear-gradient(rgba(0, 0, 0, 0), #494949), url(http://i65.tinypic.com/1zq67ly.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 70vh;
   margin-bottom: 200px;
+  position: relative;
+}
+
+.photography .photography-layer {
+  position: absolute;
+  color: #fff;
+}
+
+@media (max-width: 575.98px) {
+  .photography .photography-layer {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1199.98px) {
+  .photography .photography-layer {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .photography .photography-layer {
+    left: 15%;
+    bottom: 20%;
+  }
+}
+
+.photography .photography-layer .btn {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 18px;
+  border: 2px solid #ffffff;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.photography .photography-layer h2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .photography .photography-layer h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .photography .photography-layer h2 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+.photography .photography-layer .social {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.photography .photography-layer .social img {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.photography .photography-layer .social p {
+  margin: 0;
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=style.css.map */
