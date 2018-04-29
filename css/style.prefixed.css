@@ -83,8 +83,8 @@
 
 .jumbotron .jumbotron-content {
   color: #fff;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
 }
 
 @media only screen and (min-width: 768px) {
@@ -283,6 +283,13 @@
   min-height: 50vh;
 }
 
+.content .content-pic-2 {
+  background-image: url(http://i64.tinypic.com/1043lux.png);
+  background-size: cover;
+  background-position: top center;
+  min-height: 50vh;
+}
+
 .content .content-container {
   padding: 20px;
   display: -webkit-box;
@@ -410,7 +417,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 70vh;
-  margin-bottom: 200px;
   position: relative;
 }
 
@@ -493,5 +499,73 @@
 .photography .photography-layer .social p {
   margin: 0;
   font-size: 13px;
+}
+
+.contact {
+  background-color: #e7526b;
+  min-height: 40vh;
+  color: #fff;
+}
+
+.contact .contact-text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100%;
+  padding: 40px 5px;
+}
+
+@media only screen and (min-width: 992px) {
+  .contact .contact-text {
+    max-width: 400px;
+    margin: 90px 0 0 110px;
+    padding: 0;
+  }
+}
+
+.contact .contact-text h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.contact .contact-text p {
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.contact .contact-text a {
+  font-size: 15px;
+  line-height: 26px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #2e3b4e;
+  min-height: 30vh;
+  color: #fff;
+}
+
+footer .footer-text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 40px 15px;
+}
+
+@media only screen and (min-width: 992px) {
+  footer .footer-text {
+    margin: 60px 0 0 110px;
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
