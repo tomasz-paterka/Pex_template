@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 //fonts
 $main-font: 'Open Sans';
@@ -45,7 +45,7 @@ $breakpoints: (
 }
 
 .jumbotron {
-	min-height: 90vh;
+	min-height: 100vh;
 	background-image: url(http://i66.tinypic.com/33f6q1j.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -121,13 +121,11 @@ $breakpoints: (
 		.btn {
 			background-color: #8824cd;
 			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
-			font-weight: bold;
+			font-weight: 700;
 			color: $main-font-color;
 			line-height: 20px;
 			border-radius: 30px;
-			
 			font-size: 90%;
-			
 			@include mq('large-desktops') {
 				width: 15vw;
 				font-size: 18px;
@@ -156,10 +154,10 @@ $breakpoints: (
 	color: $main-font-color;
 	line-height: 25px;
 	padding-top: 25px;
-	//position: relative;
+	position: relative;
 	h5 {
 		text-transform: uppercase;
-		font-weight: 600;
+		font-weight: 700;
 		font-size: 15px;
 		margin-bottom: 25px;
 	}
@@ -172,15 +170,163 @@ $breakpoints: (
 	@include mq('large-desktops') {
 		background-color: transparent;
 		transform: translateY(-37px);
-		//transform: translateX(500px);
 		display: inline-block;
 		right: 48%;
 		position: absolute;
-		
 	}
 }
 .bang {
-	background-image: url(http://i68.tinypic.com/eju89l.png);
+	background-color: #e7526b;
+	position: relative;
+	min-height: 50vh;
+	.bang-layer {
+		background-image: url(http://i68.tinypic.com/eju89l.png);
+		background-size: cover;
+		background-position: top center;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		opacity: 0.5;
+	}
+	.bang-header {
+		position: absolute;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 100%;
+		flex-direction: column;
+		color: $main-font-color;
+		h2 {
+			font-size: 35px;
+			line-height: 60px;
+		}
+		p {
+			font-size: 15px;
+			line-height: 26px;
+		}
+		.btn {
+			border-radius: 30px;
+			background-color: #fff;
+			color: #e7526b;
+			font-weight: 700;
+			font-size: 90%;
+			line-height: 20px;
+			@include mq('large-desktops') {
+				width: 15vw;
+				font-size: 18px;
+				line-height: 40px;
+			}
+		}
+	}
+}
+.content {
+	[class*='col-'] {
+		padding: 0;
+	}
+	color: #3a4d60;
+	.content-pic {
+		background-image: url(http://i63.tinypic.com/eaoxgm.png);
+		background-size: cover;
+		background-position: top center;
+		min-height: 50vh;
+	}
+	.content-container {
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.content-text {
+		@include mq('desktop') {
+			margin: 0 110px;
+		}
+		h5 {
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 17px;
+			line-height: 26px;
+		}
+		.content-first-text {
+			font-size: 19px;
+			line-height: 31px;
+		}
+		.content-second-text {
+			line-height: 26px;
+			margin-top: 50px;
+		}
+	}
+}
+.experience {
+	background-image: url(http://i67.tinypic.com/2n9i3ki.jpg);
+	min-height: 60vh;
+	background-size: cover;
+	background-position: top center;
 	background-repeat: no-repeat;
-	min-height: 80vh;
+	background-attachment: fixed;
+	position: relative;
+	.experience-layer {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: #521a66;
+		opacity: 0.8;
+	}
+	.experience-header {
+		color: $main-font-color;
+		position: absolute;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 100%;
+		flex-direction: column;
+		h2 {
+			font-size: 40px;
+			line-height: 48px;
+			margin-bottom: 30px;
+		}
+		p {
+			color: #a87bb7;
+			font-size: 20px;
+			line-height: 33px;
+		}
+		.under-button {
+			font-size: 12px;
+			padding-top: 10px;
+			color: $main-font-color;
+			@include mq('large-desktops') {
+				font-size: 12px;
+				line-height: 17px;
+				padding-top: 10px;
+			}
+		}
+	}
+	.btn {
+		background-color: #8824cd;
+		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+		font-weight: 700;
+		color: $main-font-color;
+		line-height: 20px;
+		border-radius: 30px;
+		border: none;
+		font-size: 90%;
+		margin-top: 20px;
+		@include mq('large-desktops') {
+			width: 15vw;
+			font-size: 18px;
+			line-height: 40px;
+		}
+	}
+}
+.photography {
+	background-image: url(/images/layer-27.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 70vh;
+	margin-bottom: 200px;
 }
