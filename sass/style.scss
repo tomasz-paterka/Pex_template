@@ -55,7 +55,7 @@ $breakpoints: (
 		padding: 0 50px;
 		.navbar-brand {
 			line-height: 40px;
-			@include mq('desktop') {
+			@include mq('large-desktops') {
 				padding-left: 200px;
 			}
 			img {
@@ -82,12 +82,28 @@ $breakpoints: (
 		input {
 			padding: 12px 30px;
 			border-radius: 22px;
+			
+		}
+		.form-control.expanded {
+			background-color: #8824cd;
+			padding: 20px 40px;
+			transition: all .5s ease;
+			&::placeholder {
+				color: #fff;
+			}
+		}
+		.form-control {
+			transition: all .5s ease;
 		}
 		.btn {
-			background-color: transparent;
-			position: absolute;
-			transform: translate(11rem);
-			color: #ccc;
+			visibility: hidden;
+			@include mq('desktop') {
+				visibility: visible;
+				background-color: transparent;
+				position: absolute;
+				transform: translate(11rem);
+				color: #ccc;
+			}
 		}
 	}
 	.jumbotron-content {
@@ -154,7 +170,7 @@ $breakpoints: (
 	color: $main-font-color;
 	line-height: 25px;
 	padding-top: 25px;
-	position: relative;
+	//position: relative;
 	h5 {
 		text-transform: uppercase;
 		font-weight: 700;

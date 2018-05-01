@@ -31,7 +31,7 @@
   line-height: 40px;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .jumbotron nav .navbar-brand {
     padding-left: 200px;
   }
@@ -67,11 +67,32 @@
   border-radius: 22px;
 }
 
+.jumbotron nav .form-control.expanded {
+  background-color: #8824cd;
+  padding: 20px 40px;
+  transition: all .5s ease;
+}
+
+.jumbotron nav .form-control.expanded::placeholder {
+  color: #fff;
+}
+
+.jumbotron nav .form-control {
+  transition: all .5s ease;
+}
+
 .jumbotron nav .btn {
-  background-color: transparent;
-  position: absolute;
-  transform: translate(11rem);
-  color: #ccc;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 992px) {
+  .jumbotron nav .btn {
+    visibility: visible;
+    background-color: transparent;
+    position: absolute;
+    transform: translate(11rem);
+    color: #ccc;
+  }
 }
 
 .jumbotron .jumbotron-content {
@@ -158,7 +179,6 @@
   color: #fff;
   line-height: 25px;
   padding-top: 25px;
-  position: relative;
 }
 
 .about h5 {
