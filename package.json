@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "autoprefixer-cli": "^1.0.0",
-    "browser-sync": "^2.24.1",
+    "browser-sync": "^2.24.2",
     "globstar": "^1.0.0",
     "jshint": "^2.9.5",
     "node-sass": "^4.9.0",
