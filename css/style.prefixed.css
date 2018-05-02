@@ -223,9 +223,8 @@
 @media only screen and (min-width: 1200px) {
   .shape {
     background-color: transparent;
-    -webkit-transform: translateY(-37px);
-            transform: translateY(-37px);
     display: inline-block;
+    top: 0;
     right: 48%;
     position: absolute;
   }

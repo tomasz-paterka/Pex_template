@@ -185,8 +185,8 @@ $breakpoints: (
 	display: none;
 	@include mq('large-desktops') {
 		background-color: transparent;
-		transform: translateY(-37px);
 		display: inline-block;
+		top: 0;
 		right: 48%;
 		position: absolute;
 	}
