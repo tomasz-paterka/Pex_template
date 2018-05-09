@@ -16,7 +16,7 @@
 
 .jumbotron {
   min-height: 100vh;
-  background-image: url(http://i66.tinypic.com/33f6q1j.jpg);
+  background-image: url(../images/jumbotron-pic-min.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -112,14 +112,12 @@
 
 .jumbotron .jumbotron-content {
   color: #fff;
-  -webkit-transform: translateY(40%);
-          transform: translateY(40%);
 }
 
 @media only screen and (min-width: 768px) {
   .jumbotron .jumbotron-content {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
     width: 40%;
     text-align: right;
   }
@@ -238,7 +236,7 @@
 }
 
 .bang .bang-layer {
-  background-image: url(http://i68.tinypic.com/eju89l.png);
+  background-image: url(../images/bang-bang-layer.png);
   background-size: cover;
   background-position: top center;
   top: 0;
@@ -305,14 +303,14 @@
 }
 
 .content .content-pic {
-  background-image: url(http://i63.tinypic.com/eaoxgm.png);
+  background-image: url(../images/content-pic.png);
   background-size: cover;
   background-position: top center;
   min-height: 50vh;
 }
 
 .content .content-pic-2 {
-  background-image: url(http://i64.tinypic.com/1043lux.png);
+  background-image: url(../images/layer-26.png);
   background-size: cover;
   background-position: top center;
   min-height: 50vh;
@@ -355,7 +353,7 @@
 }
 
 .experience {
-  background-image: url(http://i67.tinypic.com/2n9i3ki.jpg);
+  background-image: url(../images/experience.jpg);
   min-height: 60vh;
   background-size: cover;
   background-position: top center;
@@ -441,7 +439,7 @@
 }
 
 .photography {
-  background: linear-gradient(rgba(0, 0, 0, 0), #494949), url(http://i65.tinypic.com/1zq67ly.png);
+  background: linear-gradient(rgba(0, 0, 0, 0), #494949), url(../images/layer-27.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 70vh;
