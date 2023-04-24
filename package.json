@@ -5,9 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "autoprefixer-cli": "^1.0.0",
-    "browser-sync": "^2.24.2",
+    "browser-sync": "^2.29.1",
     "globstar": "^1.0.0",
-    "jshint": "^2.9.5",
+    "jshint": "^2.13.6",
     "node-sass": "^4.9.0",
     "npm-run-all": "^4.1.2",
     "nu-html-checker": "^0.1.0",
